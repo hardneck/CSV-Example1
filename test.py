@@ -3,7 +3,7 @@ import matplotlib.pyplot as pt
 import numpy as np
 from scipy.interpolate import make_interp_spline
 
-# 輸入成功路128號之電費帳單資料，共計25筆。
+# 讀取成功路128號之電費帳單資料，共計25筆。
 with open('06-51-1452-20-1.txt') as infile:
 	rows = csv.reader(infile)
 	a1, b1 = [], []
@@ -11,7 +11,7 @@ with open('06-51-1452-20-1.txt') as infile:
 		a1.append((int(row[0])-100)*12 + int(row[1]))
 		b1.append(int(row[3]))
 
-# 輸入成功路130號之電費帳單資料，共計25筆。
+# 讀取成功路130號之電費帳單資料，共計25筆。
 with open('06-51-1451-10-8.txt') as infile:
 	rows = csv.reader(infile)
 	a2, b2 = [], []
